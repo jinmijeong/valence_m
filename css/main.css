@@ -748,6 +748,7 @@ section .valence_btn:hover:after {
 .collection_list .item .col_txt{
     background: #404c61;
     color: #f2f2f2;
+    z-index: 3;
 }
 .collection_list .item .col_txt:before{
     top: 100%;
