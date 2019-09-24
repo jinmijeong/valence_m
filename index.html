@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Valence</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
@@ -16,29 +17,31 @@
         background-size: 13px 24px;
         border: 1px solid #333;
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
     }
 
     #section02 .section_swiper .swiper-button-next,
     #section02 .section_swiper .swiper-container-rtl .swiper-button-prev {
-        right: 18%;
+        right: 2%;
     }
 
     #section02 .section_swiper .swiper-button-prev,
     #section02 .section_swiper .swiper-container-rtl .swiper-button-next {
-        left: 14.5%;
+        left: 2%;
     }
 
     #section02 .section_swiper .swiper-pagination {
         position: absolute;
-        top: 18%;
+        top: 0;
         display: inline;
         width: auto;
         font-family: 'Playfair Display', serif;
-        font-size: 45px;
+        font-size: 35px;
         color: #333;
-        left: 21%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 50px;
     }
 </style>
 
@@ -124,7 +127,6 @@
                     <i class="material-icons">input</i>
                 </a>
             </div>
-
             <nav id="overlay02" class="overlay">
 
             </nav>
@@ -132,11 +134,10 @@
         <div class="mainWrap">
             <section class="section" id="section01">
                 <div class="main_video">
-                    <div id="player">
-                        <iframe width="1080" height="1920" src="https://www.youtube.com/embed/IqNvzxzzb_c?autoplay=1&amp;loop=1;playlist=IqNvzxzzb_c;mute=1;controls=0;showinfo=0;rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                        <div class="uncontrolled"></div>
+                    <div class="bg">
+                        <div id="player"></div>
                     </div>
+                    <div class="uncontrolled"></div>
                 </div>
                 <a href="#section02" class="scroll_down"><span></span></a>
             </section>
@@ -148,13 +149,8 @@
                 <div class="swiper-container section_swiper scroll scroll_up">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="stripe"></div>
-                            <div class="stripe right"></div>
                             <a href="#">
-                                <div class="img_box">
-                                    <img src="img/sec_01_01.jpg" alt="valence men's watch">
-                                </div>
-                                <div class="text_box">
+                                <div class="text_box tc">
                                     <h3>Men</h3>
                                     <p>
                                         발랑발랑발랑쓰 발랑발랑발랑쓰발랑 발랑발랑쓰<br>
@@ -163,41 +159,40 @@
                                         발랑발랑발랑쓰...
                                     </p>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="stripe"></div>
-                            <div class="stripe right"></div>
-                            <a href="#">
                                 <div class="img_box">
                                     <img src="img/sec_01_01.jpg" alt="valence men's watch">
-                                </div>
-                                <div class="text_box">
-                                    <h3>Men</h3>
-                                    <p>
-                                        발랑발랑발랑쓰발랑발랑발랑쓰발랑발랑발랑쓰<br>
-                                        발랑발랑발랑쓰발랑발쓰발랑발랑랑쓰<br>
-                                        발랑발랑발랑쓰발랑발랑발랑쓰발랑발랑<br>
-                                        발랑발랑발랑쓰...
-                                    </p>
                                 </div>
                             </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="stripe"></div>
-                            <div class="stripe right"></div>
                             <a href="#">
+                                <div class="text_box tc">
+                                    <h3>Men</h3>
+                                    <p>
+                                        발랑발랑발랑쓰 발랑발랑발랑쓰발랑 발랑발랑쓰<br>
+                                        발랑발랑발랑쓰 발랑발쓰발랑발랑 랑쓰<br>
+                                        발랑발랑발랑쓰 발랑발랑발랑쓰 발랑발랑<br>
+                                        발랑발랑발랑쓰...
+                                    </p>
+                                </div>
                                 <div class="img_box">
                                     <img src="img/sec_01_01.jpg" alt="valence men's watch">
                                 </div>
-                                <div class="text_box">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="text_box tc">
                                     <h3>Men</h3>
                                     <p>
-                                        발랑발랑발랑쓰발랑발랑발랑쓰발랑발랑발랑쓰<br>
-                                        발랑발랑발랑쓰발랑발쓰발랑발랑랑쓰<br>
-                                        발랑발랑발랑쓰발랑발랑발랑쓰발랑발랑<br>
+                                        발랑발랑발랑쓰 발랑발랑발랑쓰발랑 발랑발랑쓰<br>
+                                        발랑발랑발랑쓰 발랑발쓰발랑발랑 랑쓰<br>
+                                        발랑발랑발랑쓰 발랑발랑발랑쓰 발랑발랑<br>
                                         발랑발랑발랑쓰...
                                     </p>
+                                </div>
+                                <div class="img_box">
+                                    <img src="img/sec_01_01.jpg" alt="valence men's watch">
                                 </div>
                             </a>
                         </div>
@@ -214,18 +209,19 @@
             </section>
             <section class="section" id="section03">
                 <div class="about_contents">
+                    <div class="img_wrap scroll scroll_up">
+                        <img src="img/sec_01_02.jpg" alt="발랑스 어바웃 valence about">
+                    </div>
                     <div class="text_wrap scroll scroll_up">
                         <div class="text_box tc">
                             <h3>VALENCE Brand Story</h3>
                             <p>
-                                발랑발랑발랑쓰 발랑발랑스 발랑이를 발랑버려발랑스 <br>
-                                발랑발랑스 발랑이를 발랑버려발랑스<br>
-                                발랑발랑발랑쓰 발랑발랑스 발랑이를 발랑버려발랑스<br>
+                                발랑스멘트 멘트 들어갑니다. <br>
+                                발랑스멘트 멘트 들어갑니다.발랑스멘트.<br>
+                                발랑스멘트 멘트 들어갑니다.발랑스멘트 멘트<br>
                             </p>
                             <a href="#" class="valence_btn">View more</a>
                         </div>
-                    </div>
-                    <div class="img_wrap scroll scroll_up">
                     </div>
                 </div>
             </section>
@@ -244,7 +240,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col col_txt col_sr scroll_right">
                                 <div class="table">
                                     <div class="table_cell">
                                         <p>
@@ -253,7 +249,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col_hover">
+                            <div class="col col_sl scroll_left">
                                 <!-- Swiper -->
                                 <div class="swiper-container collection-swiper">
                                     <div class="swiper-wrapper">
@@ -263,100 +259,6 @@
                                     </div>
                                     <!-- Add Pagination -->
                                     <div class="swiper-pagination"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item left clearFix">
-                            <div class="col_hover">
-                                <!-- Swiper -->
-                                <div class="swiper-container collection-swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">Slide 1</div>
-                                        <div class="swiper-slide">Slide 2</div>
-                                        <div class="swiper-slide">Slide 3</div>
-                                    </div>
-                                    <!-- Add Pagination -->
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                            </div>
-                            <div class="col col_tit">
-                                <div class="table">
-                                    <div class="table_cell">
-                                        <span class="num">02.</span>
-                                        <h3>Collection01</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col_sr scroll_right">
-                                <div class="table">
-                                    <div class="table_cell">
-                                        <p>
-                                            A 500 metri comodo parcheggio pubblico. Uve mette a disposizione parcheggio privato per i motociclisti.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="item right clearFix">
-                            <div class="col col_tit col_sl scroll_left">
-                                <div class="table">
-                                    <div class="table_cell">
-                                        <span class="num">03.</span>
-                                        <h3>Collection01</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="table">
-                                    <div class="table_cell">
-                                        <p>
-                                            A 500 metri comodo parcheggio pubblico. Uve mette a disposizione parcheggio privato per i motociclisti.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col_hover">
-                                <!-- Swiper -->
-                                <div class="swiper-container collection-swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">Slide 1</div>
-                                        <div class="swiper-slide">Slide 2</div>
-                                        <div class="swiper-slide">Slide 3</div>
-                                    </div>
-                                    <!-- Add Pagination -->
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item left clearFix">
-                            <div class="col_hover">
-                                <!-- Swiper -->
-                                <div class="swiper-container collection-swiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">Slide 1</div>
-                                        <div class="swiper-slide">Slide 2</div>
-                                        <div class="swiper-slide">Slide 3</div>
-                                    </div>
-                                    <!-- Add Pagination -->
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                            </div>
-                            <div class="col col_tit">
-                                <div class="table">
-                                    <div class="table_cell">
-                                        <span class="num">04.</span>
-                                        <h3>Collection01</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col col_sr scroll_right">
-                                <div class="table">
-                                    <div class="table_cell">
-                                        <p>
-                                            A 500 metri comodo parcheggio pubblico. Uve mette a disposizione parcheggio privato per i motociclisti.
-                                        </p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -364,12 +266,12 @@
                             <div class="col col_tit col_sl scroll_left">
                                 <div class="table">
                                     <div class="table_cell">
-                                        <span class="num">05.</span>
+                                        <span class="num">01.</span>
                                         <h3>Collection01</h3>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col col_txt col_sr scroll_right">
                                 <div class="table">
                                     <div class="table_cell">
                                         <p>
@@ -378,7 +280,100 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col_hover">
+                            <div class="col col_sl scroll_left">
+                                <!-- Swiper -->
+                                <div class="swiper-container collection-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">Slide 1</div>
+                                        <div class="swiper-slide">Slide 2</div>
+                                        <div class="swiper-slide">Slide 3</div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item right clearFix">
+                            <div class="col col_tit col_sl scroll_left">
+                                <div class="table">
+                                    <div class="table_cell">
+                                        <span class="num">01.</span>
+                                        <h3>Collection01</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col_txt col_sr scroll_right">
+                                <div class="table">
+                                    <div class="table_cell">
+                                        <p>
+                                            A 500 metri comodo parcheggio pubblico. Uve mette a disposizione parcheggio privato per i motociclisti.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col_sl scroll_left">
+                                <!-- Swiper -->
+                                <div class="swiper-container collection-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">Slide 1</div>
+                                        <div class="swiper-slide">Slide 2</div>
+                                        <div class="swiper-slide">Slide 3</div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item right clearFix">
+                            <div class="col col_tit col_sl scroll_left">
+                                <div class="table">
+                                    <div class="table_cell">
+                                        <span class="num">01.</span>
+                                        <h3>Collection01</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col_txt col_sr scroll_right">
+                                <div class="table">
+                                    <div class="table_cell">
+                                        <p>
+                                            A 500 metri comodo parcheggio pubblico. Uve mette a disposizione parcheggio privato per i motociclisti.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col_sl scroll_left">
+                                <!-- Swiper -->
+                                <div class="swiper-container collection-swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">Slide 1</div>
+                                        <div class="swiper-slide">Slide 2</div>
+                                        <div class="swiper-slide">Slide 3</div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item right clearFix">
+                            <div class="col col_tit col_sl scroll_left">
+                                <div class="table">
+                                    <div class="table_cell">
+                                        <span class="num">01.</span>
+                                        <h3>Collection01</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col_txt col_sr scroll_right">
+                                <div class="table">
+                                    <div class="table_cell">
+                                        <p>
+                                            A 500 metri comodo parcheggio pubblico. Uve mette a disposizione parcheggio privato per i motociclisti.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col_sl scroll_left">
                                 <!-- Swiper -->
                                 <div class="swiper-container collection-swiper">
                                     <div class="swiper-wrapper">
@@ -395,6 +390,129 @@
                 </div>
             </section>
         </div>
+        <footer id="footerWrap">
+            <div class="footer">
+                <div class="footer_inner">
+                    <div class="contents_wrap">
+                        <ul class="mobile_nav content_box">
+                            <li class="menu_item">
+                                <div class="mobile_nav_item">
+                                    <a href="#" class="footershop_arrow">SHOP INFO</a>
+                                    <div class="nav_arrow footershop_arrow">
+                                        <button type="button" class="nav_arrow_icon">
+                                            <span>
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#fff" fill="none" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mobile_nav_sub footershop_sub_nav">
+                                    <ul class="mobile_nav_sublist">
+                                        <li>
+                                            <a href="/viviennewestwood/about.html">
+                                                회사소개
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/member/agreement.html">
+                                                이용약관
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/member/privacy.html">
+                                                <span>개인정보처리방침</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/shopinfo/guide.html">
+                                                이용안내
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu_item">
+                                <div class="mobile_nav_item">
+                                    <a href="#" class="footercompany_arrow">COMPANY INFO</a>
+                                    <div class="nav_arrow footercompany_arrow">
+                                        <button type="button" class="nav_arrow_icon">
+                                            <span>
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#fff" fill="none" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mobile_nav_sub footercompany_sub_nav">
+                                    <ul class="mobile_nav_sublist">
+                                        <li>
+                                            <p>
+                                                법인명(상호) : (주)트랜드메카 <br>
+                                                대표자(성명) : 서대규<br>
+                                                사업자 등록번호 안내 : 113-86-48435 <br><a href="#none" class="txt-change-mid2" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=113-86-48435', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a><br>
+                                                통신판매업 신고 2016-서울강남02846호
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu_item">
+                                <div class="mobile_nav_item">
+                                    <a href="#" class="footercenter_arrow">CUSTOMER CENTER</a>
+                                    <div class="nav_arrow footercenter_arrow">
+                                        <button type="button" class="nav_arrow_icon">
+                                            <span>
+                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                                    <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#fff" fill="none" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="mobile_nav_sub footercenter_sub_nav">
+                                    <ul class="mobile_nav_sublist">
+                                        <li>
+                                            <p>
+                                                전화 : 02-1599-3735<br>
+                                                팩스 : 02-6455-2581<br>
+                                                주소 : 06107 서울특별시 강남구 논현로 626 (논현동) 엠빌딩 7층<br>
+                                                구주소 : 06107 서울특별시 강남구 논현동 221-5 엠빌딩 7층<br>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="content_box clearFix footer_sns">
+                            <div class="footer_logo tc">
+                                <a href="index.html"><img src="img/valence_logo_w.png" alt="valence logo 발랑스 로고"></a>
+                            </div>
+                            <ul class="sns_logo tc">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon_facebook" viewBox="0 0 32 32">
+                                            <path fill="#fff" d="M18.56 31.36V17.28h4.48l.64-5.12h-5.12v-3.2c0-1.28.64-2.56 2.56-2.56h2.56V1.28H19.2c-3.84 0-7.04 2.56-7.04 7.04v3.84H7.68v5.12h4.48v14.08h6.4z"></path>
+                                        </svg></a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon_insta" viewBox="0 0 32 32">
+                                            <path fill="#fff" d="M16 3.094c4.206 0 4.7.019 6.363.094 1.538.069 2.369.325 2.925.544.738.287 1.262.625 1.813 1.175s.894 1.075 1.175 1.813c.212.556.475 1.387.544 2.925.075 1.662.094 2.156.094 6.363s-.019 4.7-.094 6.363c-.069 1.538-.325 2.369-.544 2.925-.288.738-.625 1.262-1.175 1.813s-1.075.894-1.813 1.175c-.556.212-1.387.475-2.925.544-1.663.075-2.156.094-6.363.094s-4.7-.019-6.363-.094c-1.537-.069-2.369-.325-2.925-.544-.737-.288-1.263-.625-1.813-1.175s-.894-1.075-1.175-1.813c-.212-.556-.475-1.387-.544-2.925-.075-1.663-.094-2.156-.094-6.363s.019-4.7.094-6.363c.069-1.537.325-2.369.544-2.925.287-.737.625-1.263 1.175-1.813s1.075-.894 1.813-1.175c.556-.212 1.388-.475 2.925-.544 1.662-.081 2.156-.094 6.363-.094zm0-2.838c-4.275 0-4.813.019-6.494.094-1.675.075-2.819.344-3.819.731-1.037.4-1.913.944-2.788 1.819S1.486 4.656 1.08 5.688c-.387 1-.656 2.144-.731 3.825-.075 1.675-.094 2.213-.094 6.488s.019 4.813.094 6.494c.075 1.675.344 2.819.731 3.825.4 1.038.944 1.913 1.819 2.788s1.756 1.413 2.788 1.819c1 .387 2.144.656 3.825.731s2.213.094 6.494.094 4.813-.019 6.494-.094c1.675-.075 2.819-.344 3.825-.731 1.038-.4 1.913-.944 2.788-1.819s1.413-1.756 1.819-2.788c.387-1 .656-2.144.731-3.825s.094-2.212.094-6.494-.019-4.813-.094-6.494c-.075-1.675-.344-2.819-.731-3.825-.4-1.038-.944-1.913-1.819-2.788s-1.756-1.413-2.788-1.819c-1-.387-2.144-.656-3.825-.731C20.812.275 20.275.256 16 .256z"></path>
+                                            <path fill="#fff" d="M16 7.912a8.088 8.088 0 0 0 0 16.175c4.463 0 8.087-3.625 8.087-8.088s-3.625-8.088-8.088-8.088zm0 13.338a5.25 5.25 0 1 1 0-10.5 5.25 5.25 0 1 1 0 10.5zM26.294 7.594a1.887 1.887 0 1 1-3.774.002 1.887 1.887 0 0 1 3.774-.003z"></path>
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">
+                Copyright (C) 2019 Trendmecca.
+            </p>
+        </footer>
     </div>
 </body>
 <script src="js/jquery-1.10.2.min.js"></script>
@@ -403,43 +521,92 @@
     $(document).ready(function() {
 
         var stickyHeaderTop = $('#header_sticky').offset().top;
-            $(window).scroll(function() {
-                var scrollTop = $(window).scrollTop();
-                var docHeight = $(document).height();
-                var winHeight = $(window).height();
-                var scrollPercent = (scrollTop) / (docHeight - winHeight);
-                var scrollPercentRounded = Math.round(scrollPercent * 100);
-                console.log(scrollPercentRounded);
-                if ($(window).scrollTop() > stickyHeaderTop || scrollPercentRounded >= 13.5) {
-                    $('body').addClass('sticky_header');
-                } else {
-                    $('body').removeClass('sticky_header');
-                    $('#header_sticky, .login_wrap').css({
-                        "transition": "inherit"
-                    });
+        $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            var docHeight = $(document).height();
+            var winHeight = $(window).height();
+            var scrollPercent = (scrollTop) / (docHeight - winHeight);
+            var scrollPercentRounded = Math.round(scrollPercent * 100);
+            console.log(scrollPercentRounded);
+            if ($(window).scrollTop() > stickyHeaderTop || scrollPercentRounded >= 13.5) {
+                $('body').addClass('sticky_header');
+            } else {
+                $('body').removeClass('sticky_header');
+                $('#header_sticky, .login_wrap').css({
+                    "transition": "inherit"
+                });
+            }
+        });
+
+        var openMenu = false;
+        $('.menu_wrap').click(function() {
+            if (openMenu == false) {
+                $('#header_sticky, .login_wrap').css({
+                    "transition": "top 0.4s"
+                });
+                $('body').addClass('openMenu1');
+                openMenu = true;
+            } else {
+                $('body').removeClass('openMenu1');
+                openMenu = false;
+            }
+            return false;
+        });
+        $('.login_wrap').click(function() {
+            if (openMenu == false) {
+                $('#header_sticky, .login_wrap').css({
+                    "transition": "top 0.4s"
+                });
+                $('body').addClass('openMenu2');
+                openMenu = true;
+            } else {
+                $('body').removeClass('openMenu2');
+                openMenu = false;
+            }
+            return false;
+        });
+
+        $('.main_menu > li').bind('mouseenter focusin', function() {
+            $(this).find('.sub_menu').addClass('on');
+        }).bind('mouseleave focusout', function() {
+            $('.sub_menu').removeClass('on');
+        })
+
+        // This function creates an <iframe> (and YouTube player)
+        // after the API code downloads.
+        var player;
+
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '100%',
+                width: '100%',
+                videoId: 'IqNvzxzzb_c',
+                playerVars: {
+                    'autoplay': 1,
+                    'autohide': 0,
+                    'controls': 0,
+                    'loop': 1,
+                    'rel': 0,
+                    'playsinline': 1,
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
                 }
             });
+        }
 
-            var openMenu = false;
-            $('.menu_wrap').click(function() {
-                if (openMenu == false) {
-                    $('#header_sticky, .login_wrap').css({
-                        "transition": "top 0.4s"
-                    });
-                    $('body').addClass('openMenu');
-                    openMenu = true;
-                } else {
-                    $('body').removeClass('openMenu');
-                    openMenu = false;
-                }
-                return false;
-            });
+        function onPlayerReady(event) {
+            event.target.mute();
+            event.target.playVideo();
+        }
 
-            $('.main_menu > li').bind('mouseenter focusin', function() {
-                $(this).find('.sub_menu').addClass('on');
-            }).bind('mouseleave focusout', function() {
-                $('.sub_menu').removeClass('on');
-            })
+        function onPlayerStateChange(event) {
+            // Loop the video
+            if (event.data == YT.PlayerState.ENDED) {
+                event.target.playVideo();
+            }
+        }
 
         /* scroll down */
         $(function() {
@@ -458,19 +625,19 @@
 
             $('.scroll_right').each(function() {
                 var imgPosition = $(this).offset().top;
-                if (scrollY > imgPosition - windowH + 330) {
+                if (scrollY > imgPosition - windowH + 200) {
                     $(this).addClass("slide_right");
                 }
             })
             $('.scroll_left').each(function() {
                 var imgPosition = $(this).offset().top;
-                if (scrollY > imgPosition - windowH + 330) {
+                if (scrollY > imgPosition - windowH + 200) {
                     $(this).addClass("slide_left");
                 }
             })
             $('.scroll_up').each(function() {
                 var imgPosition = $(this).offset().top;
-                if (scrollY > imgPosition - windowH + 330) {
+                if (scrollY > imgPosition - windowH + 200) {
                     $(this).addClass("slide_up");
                 }
             })
@@ -480,7 +647,7 @@
         var swiper = new Swiper('.swiper-container.section_swiper', {
             loop: true,
             slidesPerView: 'auto',
-            spaceBetween: 30,
+            spaceBetween: 0,
             centeredSlides: true,
             speed: 500,
             pagination: {
@@ -506,6 +673,14 @@
                 clickable: true,
             },
         });
+
+        /* footer */
+        $('.mobile_nav_sub').hide()
+        $('.mobile_nav .menu_item').click(function() {
+            $('.mobile_nav_sub', this).slideToggle()
+            $('.nav_arrow_icon span', this).toggleClass('click_rotate')
+            return false;
+        })
 
     })
 </script>
