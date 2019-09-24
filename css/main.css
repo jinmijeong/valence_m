@@ -454,7 +454,6 @@ section .valence_btn:hover:after {
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
-    overflow: hidden;
     background: url(../img/valence_video_poster.jpg) no-repeat center center;
     background-size: cover;
 }
