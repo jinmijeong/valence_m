@@ -1,0 +1,23 @@
+ /* reset */
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,th,td,form,fieldset,legend,input,label,textarea,select,button {margin:0; padding:0;}
+body,h1,h2,h3,h4,h5,h6 { font-size:12px; color:#333;}
+a {text-decoration:none; color:#333;}
+img,fieldset {border:none;}
+ul,ol,li {list-style:none;}
+strong,em,address {font-style:normal; font-weight:normal;}
+table {border-collapse:collapse;}
+*, input, :before, :after{box-sizing:border-box;}
+/* common */
+.clearFix:after {
+    content:"";
+    clear:both;
+    display:block;
+    }
+.fl{float:left}
+.fr{float:right}
+.tl{text-align:left;}
+.tr{text-align:right;}
+.tc{text-align:center;}
+.dpno{display: none;}
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Sans+KR:100,300,400,500,700,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i&display=swap');
