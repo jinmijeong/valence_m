@@ -103,6 +103,7 @@
 #header_sticky .menu_container {
     width: 100%;
     height: 60px;
+    background: #333;
 }
 
 .openMenu1,.openMenu2 {
