@@ -697,12 +697,9 @@ section .valence_btn:hover:after {
     margin-bottom:10px;
 }
 
-.collection_contents .collection_list .item > div {
-    height: 230px;
-}
 
 .collection_list .item .col {
-    
+    height: 230px;
     position: relative;
     z-index: 2;
     background:#fff;
@@ -735,6 +732,9 @@ section .valence_btn:hover:after {
     border-color: #324156 transparent transparent;
     border-width: 10px;
     margin-left: -10px;
+}
+.collection_list .item .col_product{
+    height:400px;
 }
 .collection_list .item .col_txt{
     background: #404c61;
