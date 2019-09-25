@@ -89,36 +89,28 @@
 }
 
 /* header */
+#headerWrap{
+    position: relative;
+    width:100%;
+    
+}
 #header_sticky {
-    position: absolute;
-    top: 45%;
+    position: fixed;
     z-index: 6;
+        width: 100%;
 }
 
 #header_sticky .menu_container {
-    width: 230px;
-    height: 100px;
-    background: #666;
-}
-
-.sticky_header #header_sticky,
-.sticky_header .login_wrap {
-    position: fixed;
-    top: 0;
-    margin-top: 0px;
+    width: 100%;
+    height: 60px;
 }
 
 .openMenu1,.openMenu2 {
     overflow-y: hidden;
 }
 
-.openMenu1 #header_sticky,
-.openMenu1 .login_wrap,.openMenu2 #header_sticky,
-.openMenu2 .login_wrap {
-    position: fixed;
-    top: 45%;
-}
-.openMenu1 .login_wrap,.openMenu2 #header_sticky{
+
+.openMenu1 .login_wrap,.openMenu2 .menu_wrap{
     display: none;
 }
 
@@ -132,13 +124,28 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100%;
-    display: block;
+    width: 60px;
+    height: 60px;
     -webkit-transition: background .3s;
     transition: background .3s;
     background: #333;
     z-index: 6;
+}
+#header_sticky .login_wrap {
+    background: #333;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    display: block;
+    text-align: center;
+}
+#header_sticky .login_wrap  > i {
+    font-size: 30px;
+    color: #fff;
+    padding: 14px 0;
 }
 
 #header_sticky .button_container {
@@ -193,12 +200,12 @@
 #header_sticky .logo_wrap {
     display: block;
     float: left;
-    width: 130px;
-    padding: 25px 0;
+    width: calc(100% - 120px);
+    height: 60px;
+    margin-left: 60px;
+    padding: 13px 0;
     background: #fff;
     text-align: center;
-    margin-left: 100px;
-    height: 100px;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -212,7 +219,7 @@
 }
 
 #header_sticky .logo_wrap img {
-    height: 50px;
+    height: 35px;
     -webkit-transition: all .5s;
     transition: all .5s;
 }
@@ -238,26 +245,6 @@
     transform: translate(-50%, -50%);
 }
 
-.login_wrap {
-    background: #333;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 45%;
-    right: 0;
-    z-index: 6;
-}
-
-.login_wrap > a {
-    display: block;
-    text-align: center;
-    padding: 33px 0;
-}
-
-.login_wrap > a > i {
-    font-size: 30px;
-    color: #fff;
-}
 
 .overlay {
     position: fixed;
@@ -347,6 +334,7 @@ section {
     height: 100%;
     position: relative;
     z-index: 1;
+    overflow:hidden;
 }
 
 section .text_box h3 {
