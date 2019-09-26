@@ -263,65 +263,72 @@
 
 }
 
-#headerWrap .overlay .main_menu {
+#headerWrap .overlay .mobile_nav {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 40%;
     max-width: 750px;
 }
 
-#headerWrap .overlay .main_menu > li {
-    flex-grow: 1;
+#headerWrap .overlay .mobile_nav > li {
+       flex-grow: 1;
     font-family: 'Playfair Display', serif;
-    line-height: 1.8;
+    line-height: 1.5;
     font-weight: 300;
     font-size: 35px;
     position: relative;
-}
-
-#headerWrap .overlay .main_menu > li:after {
-    content: '';
-    width: 0;
-    position: absolute;
-    height: 2px;
-    background: #fff;
-    top: 73px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: all .3s ease;
-}
-
-#headerWrap .overlay .main_menu > li:hover:after {
-    width: 30%;
+    padding: 10px 0;
 }
 
 #headerWrap .overlay ul li a {
     color: #fff;
 }
 
-#headerWrap .overlay .main_menu .sub_menu {
-    opacity: 0;
-    -webkit-transition: all ease .4s;
-    -moz-transition: all ease .4s;
-    -ms-transition: all ease .4s;
-    -o-transition: all ease .4s;
-    transition: all ease .4s;
-    margin-top: 30px;
-}
 
-#headerWrap .overlay .main_menu .sub_menu li {
+#headerWrap .overlay .mobile_nav .mobile_nav_sub li {
     font-size: 20px;
+    line-height:1.8;
+}
+#headerWrap .overlay .mobile_nav .menu_item .mobile_nav_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headerWrap .overlay .mobile_nav .menu_item  .mobile_nav_sub{
+    margin-top:10px;
+}
+#headerWrap .overlay .mobile_nav .menu_item  .nav_arrow{
+    padding-left: 20px;
 }
 
-#headerWrap .overlay .main_menu .sub_menu.on {
-    opacity: 1;
+#headerWrap .overlay .mobile_nav .menu_item  .nav_arrow .nav_arrow_icon{
+    background: none;
+    border: none;
+    display: inline-block;
+    outline-style: none;
+    width: 22px;
+    height: 22px;
+    position: relative;
 }
-
+#headerWrap .overlay .mobile_nav .menu_item  .nav_arrow .nav_arrow_icon span{
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+#headerWrap .overlay .mobile_nav .menu_item  .nav_arrow .nav_arrow_icon span .icon{
+        display: block;
+    
+    transition: all 0.1s ease-in;
+}
+#headerWrap .overlay .mobile_nav .menu_item  .nav_arrow .nav_arrow_icon span.click_rotate{
+        -webkit-transform: rotate(180deg) translateY(50%);
+	transform: rotate(180deg) translateY(50%);
+}
 /* main container */
 #mainWrap {
     width: 100%;

@@ -66,17 +66,28 @@
                     </a>
                 </div>
                 <nav id="overlay01" class="overlay">
-                    <ul class="main_menu tc">
-                        <li>
+                    <ul class="mobile_nav tc">
+                        <li class="menu_item">
                             <a href="#">
                                 About
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                                Shop
-                            </a>
-                            <ul class="sub_menu">
+                        <li class="menu_item">
+                           <div class="mobile_nav_item">
+                                <a href="#">
+                                    Shop
+                                </a>
+                                <div class="nav_arrow">
+                                    <button type="button" class="nav_arrow_icon">
+                                        <span>
+                                             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                                <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#fff" fill="none" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="mobile_nav_sub">
                                 <li>
                                     <a href="#">
                                         All
@@ -94,11 +105,22 @@
                                 </li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="#">
-                                Community
-                            </a>
-                            <ul class="sub_menu">
+                        <li class="menu_item">
+                           <div class="mobile_nav_item">
+                                <a href="#">
+                                    Community
+                                </a>
+                                <div class="nav_arrow">
+                                    <button type="button" class="nav_arrow_icon">
+                                        <span>
+                                             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                                                <path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#fff" fill="none" fill-rule="evenodd"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="mobile_nav_sub">
                                 <li>
                                     <a href="#">
                                         Notice
@@ -678,8 +700,8 @@
 
         /* footer */
         $('.mobile_nav_sub').hide()
-        $('.mobile_nav .menu_item').click(function() {
-            $('.mobile_nav_sub', this).slideToggle()
+        $('.mobile_nav .menu_item .mobile_nav_item').click(function() {
+            $('+.mobile_nav_sub', this).slideToggle()
             $('.nav_arrow_icon span', this).toggleClass('click_rotate')
             return false;
         })
